@@ -1,4 +1,5 @@
 // Servos
+mintware.setCenter(MintPin.P0, -5)
 mintware.servo180(MintPin.P0, 0)
 basic.pause(1000)
 mintware.servo180(MintPin.P0, 180)

@@ -46,8 +46,26 @@ namespace mintware {
 
     // ===== Servos =====
 
+    // Center correction per pin for 180° servos (index = MintPin value)
+    let centerOffsets: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
     /**
-     * Sets a 180° servo to an angle.
+     * Corrects the center position of a 180° servo, e.g. if it is mounted a few degrees off.
+     * The correction applies to all following "servo 180°" blocks on this pin.
+     * @param pin pin the servo is connected to
+     * @param offset correction from -10 to 10 degrees, eg: 0
+     */
+    //% blockId=mintware_setcenter
+    //% block="set center of servo 180° at %pin to %offset °"
+    //% pin.defl=MintPin.P0
+    //% offset.min=-10 offset.max=10 offset.defl=0
+    //% group="Servos" weight=95
+    export function setCenter(pin: MintPin, offset: number): void {
+        centerOffsets[pin] = Math.constrain(offset, -10, 10)
+    }
+
+    /**
+     * Sets a 180° servo to an angle (including the center correction).
      * @param pin pin the servo is connected to
      * @param angle angle from 0 to 180 degrees, eg: 90
      */
@@ -58,7 +76,7 @@ namespace mintware {
     //% angle.min=0 angle.max=180 angle.defl=90
     //% group="Servos" weight=100
     export function servo180(pin: MintPin, angle: number): void {
-        angle = Math.constrain(angle, 0, 180)
+        angle = Math.constrain(angle + centerOffsets[pin], 0, 180)
         pins.servoSetContinuous(toPin(pin), false)
         pins.servoWritePin(toPin(pin), angle)
     }

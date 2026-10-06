@@ -9,11 +9,13 @@ Open [https://makecode.microbit.org/](https://makecode.microbit.org/), click **E
 ## Servos
 
 ```blocks
+mintware.setCenter(MintPin.P0, -3)
 mintware.servo180(MintPin.P0, 90)
 mintware.servo360(MintPin.P1, 50)
 mintware.stopServo(MintPin.P1)
 ```
 
+* `setCenter(pin, offset)` – corrects the center of a 180° servo by -10 to 10 degrees (e.g. after mounting)
 * `servo180(pin, angle)` – sets a 180° servo to an angle (0–180)
 * `servo360(pin, speed)` – turns a 360° servo, speed -100 to 100 (0 = stop)
 * `stopServo(pin)` – switches off the servo signal

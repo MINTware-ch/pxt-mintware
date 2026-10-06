@@ -8,5 +8,6 @@
   "mintware.setGroup|block": "utiliser le groupe radio %group",
   "mintware.sendValue|block": "envoyer la valeur %value",
   "mintware.onReceivedValue|block": "quand une valeur est reçue",
-  "mintware.onReceivedValue|handlerParam|value": "valeur"
+  "mintware.onReceivedValue|handlerParam|value": "valeur",
+  "mintware.setCenter|block": "corriger le centre du servo 180° sur %pin de %offset °"
 }

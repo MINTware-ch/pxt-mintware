@@ -1,7 +1,7 @@
 {
   "MintPin": "Konfliktfreie Anschlüsse (keine Display-, Tasten- oder I2C-Pins)",
   "mintware": "MINTware-Blöcke für Servos und Funk",
-  "mintware.servo180": "Stellt einen 180°-Servo auf einen Winkel.",
+  "mintware.servo180": "Stellt einen 180°-Servo auf einen Winkel (inklusive Mittelpunkt-Korrektur).",
   "mintware.servo180|param|pin": "Anschluss des Servos",
   "mintware.servo180|param|angle": "Winkel von 0 bis 180 Grad",
   "mintware.servo360": "Lässt einen 360°-Servo mit einem Tempo drehen.",
@@ -13,5 +13,8 @@
   "mintware.setGroup|param|group": "Funkgruppe von 0 bis 255",
   "mintware.sendValue": "Sendet eine Zahl an alle micro:bits in derselben Funkgruppe.",
   "mintware.sendValue|param|value": "Zu sendende Zahl",
-  "mintware.onReceivedValue": "Führt Code aus, wenn per Funk eine Zahl empfangen wird."
+  "mintware.onReceivedValue": "Führt Code aus, wenn per Funk eine Zahl empfangen wird.",
+  "mintware.setCenter": "Korrigiert die Mittelstellung eines 180°-Servos, z.B. wenn er beim Einbau um ein paar Grad verschoben ist. Die Korrektur gilt für alle folgenden «Servo 180°»-Blöcke an diesem Pin.",
+  "mintware.setCenter|param|pin": "Anschluss des Servos",
+  "mintware.setCenter|param|offset": "Korrektur von -10 bis 10 Grad"
 }

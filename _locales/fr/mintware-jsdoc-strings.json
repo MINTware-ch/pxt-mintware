@@ -1,7 +1,7 @@
 {
   "MintPin": "Broches sans conflit (pas de broches d'affichage, de boutons ou I2C)",
   "mintware": "Blocs MINTware pour servos et radio",
-  "mintware.servo180": "Règle un servo 180° sur un angle.",
+  "mintware.servo180": "Règle un servo 180° sur un angle (correction du centre incluse).",
   "mintware.servo180|param|pin": "broche du servo",
   "mintware.servo180|param|angle": "angle de 0 à 180 degrés",
   "mintware.servo360": "Fait tourner un servo 360° à une vitesse donnée.",
@@ -13,5 +13,8 @@
   "mintware.setGroup|param|group": "groupe radio de 0 à 255",
   "mintware.sendValue": "Envoie un nombre à tous les micro:bits du même groupe radio.",
   "mintware.sendValue|param|value": "nombre à envoyer",
-  "mintware.onReceivedValue": "Exécute du code lorsqu'un nombre est reçu par radio."
+  "mintware.onReceivedValue": "Exécute du code lorsqu'un nombre est reçu par radio.",
+  "mintware.setCenter": "Corrige la position centrale d'un servo 180°, p. ex. s'il est monté avec quelques degrés de décalage. La correction s'applique à tous les blocs « servo 180° » suivants sur cette broche.",
+  "mintware.setCenter|param|pin": "broche du servo",
+  "mintware.setCenter|param|offset": "correction de -10 à 10 degrés"
 }

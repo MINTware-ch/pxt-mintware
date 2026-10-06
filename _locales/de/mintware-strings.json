@@ -8,5 +8,6 @@
   "mintware.setGroup|block": "Funkgruppe %group verwenden",
   "mintware.sendValue|block": "sende Wert %value",
   "mintware.onReceivedValue|block": "wenn Wert empfangen",
-  "mintware.onReceivedValue|handlerParam|value": "Wert"
+  "mintware.onReceivedValue|handlerParam|value": "Wert",
+  "mintware.setCenter|block": "Mittelpunkt Servo 180° an %pin korrigieren um %offset °"
 }
