@@ -1,0 +1,17 @@
+{
+  "MintPin": "Broches sans conflit (pas de broches d'affichage, de boutons ou I2C)",
+  "mintware": "Blocs MINTware pour servos et radio",
+  "mintware.servo180": "Règle un servo 180° sur un angle.",
+  "mintware.servo180|param|pin": "broche du servo",
+  "mintware.servo180|param|angle": "angle de 0 à 180 degrés",
+  "mintware.servo360": "Fait tourner un servo 360° à une vitesse donnée.",
+  "mintware.servo360|param|pin": "broche du servo",
+  "mintware.servo360|param|speed": "-100 (arrière à fond) à 100 (avant à fond), 0 = arrêt",
+  "mintware.stopServo": "Arrête complètement un servo (coupe le signal).",
+  "mintware.stopServo|param|pin": "broche du servo",
+  "mintware.setGroup": "Définit le groupe radio. Seuls les micro:bits du même groupe peuvent communiquer.",
+  "mintware.setGroup|param|group": "groupe radio de 0 à 255",
+  "mintware.sendValue": "Envoie un nombre à tous les micro:bits du même groupe radio.",
+  "mintware.sendValue|param|value": "nombre à envoyer",
+  "mintware.onReceivedValue": "Exécute du code lorsqu'un nombre est reçu par radio."
+}

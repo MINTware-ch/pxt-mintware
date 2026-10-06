@@ -1,0 +1,27 @@
+{
+    "name": "mintware",
+    "version": "0.1.1",
+    "description": "MINTware blocks for servos and radio",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "pxtparts.json",
+        "_locales/de/mintware-strings.json",
+        "_locales/de/mintware-jsdoc-strings.json",
+        "_locales/fr/mintware-strings.json",
+        "_locales/fr/mintware-jsdoc-strings.json",
+        "_locales/it/mintware-strings.json",
+        "_locales/it/mintware-jsdoc-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}

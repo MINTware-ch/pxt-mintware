@@ -1,0 +1,12 @@
+{
+  "mintware|block": "Mintware",
+  "{id:group}Servos": "Servos",
+  "{id:group}Radio": "Funk",
+  "mintware.servo180|block": "Servo 180° an %pin auf %angle °",
+  "mintware.servo360|block": "Servo 360° an %pin drehen mit Tempo %speed",
+  "mintware.stopServo|block": "Servo an %pin stoppen",
+  "mintware.setGroup|block": "Funkgruppe %group verwenden",
+  "mintware.sendValue|block": "sende Wert %value",
+  "mintware.onReceivedValue|block": "wenn Wert empfangen",
+  "mintware.onReceivedValue|handlerParam|value": "Wert"
+}

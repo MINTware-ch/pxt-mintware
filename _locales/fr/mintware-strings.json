@@ -1,0 +1,12 @@
+{
+  "mintware|block": "Mintware",
+  "{id:group}Servos": "Servos",
+  "{id:group}Radio": "Radio",
+  "mintware.servo180|block": "servo 180° sur %pin à %angle °",
+  "mintware.servo360|block": "servo 360° sur %pin tourner à vitesse %speed",
+  "mintware.stopServo|block": "arrêter le servo sur %pin",
+  "mintware.setGroup|block": "utiliser le groupe radio %group",
+  "mintware.sendValue|block": "envoyer la valeur %value",
+  "mintware.onReceivedValue|block": "quand une valeur est reçue",
+  "mintware.onReceivedValue|handlerParam|value": "valeur"
+}
